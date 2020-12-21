@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "protea-project"
+    }
+  },
+  "defaultProject": "protea-project",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "export NODE_OPTIONS='--max-old-space-size=8192';ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-worker": "ng run ripple-frontend:build-worker",
+    "dev-worker": "ng run ripple-frontend:dev-worker",
+    "build-prod": "export NODE_OPTIONS='--max-old-space-size=8192';ng build --prod --build-optimizer"
   },
   "private": true,
   "dependencies": {
